@@ -1,11 +1,11 @@
 from flask import Flask, render_template, request
 from logic import check_url_status
 app = Flask(__name__)  # initializing the Flask Class
-
+# this is a flask app
 @app.route("/")
 @app.route("/home")
 def home():
-	return  render_template("index.html")        #"Hello"    #<h1>Hello World</h1>
+	return  render_template("index.html")       
 
 @app.route("/result",methods = ['POST','GET'])
 def result():
